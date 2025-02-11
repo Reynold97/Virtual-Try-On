@@ -144,7 +144,6 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=7860,
         show_error=True,
-        enable_queue=False,  # Disable queue
         show_api=False,      # Disable API interface
         show_tips=False      # Disable tips
     )
