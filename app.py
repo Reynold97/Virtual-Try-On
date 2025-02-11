@@ -142,6 +142,9 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
-        server_port=6060,
-        show_error=True
+        server_port=7860,
+        show_error=True,
+        enable_queue=False,  # Disable queue
+        show_api=False,      # Disable API interface
+        show_tips=False      # Disable tips
     )
