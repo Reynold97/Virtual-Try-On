@@ -95,9 +95,7 @@ WantedBy=multi-user.target
 Modify the launch parameters in app.py to work with the service:
 ```python
 demo.launch(
-    server_name="0.0.0.0",  # Allow external connections
-    server_port=7860,
-    show_error=True
+    server_port=6060,
 )
 ```
 
