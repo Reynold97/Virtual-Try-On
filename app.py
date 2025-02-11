@@ -140,10 +140,5 @@ with gr.Blocks() as demo:
 
 # Launch the app
 if __name__ == "__main__":
-    demo.launch(
-        server_name="0.0.0.0",
-        server_port=7860,
-        show_error=True,
-        show_api=False,      # Disable API interface
-        show_tips=False      # Disable tips
-    )
+    demo.show_api = False
+    demo.launch(server_port=6060)
