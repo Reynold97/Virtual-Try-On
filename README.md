@@ -8,6 +8,27 @@ This application provides a web interface for virtual try-on of garments using t
 - pip
 - systemd (for service deployment)
 - Git
+- Node.js and npm
+- debianutils
+
+### Install System Dependencies
+
+```bash
+# Add NodeSource repository
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+
+# Install Node.js and npm
+sudo apt-get install -y nodejs
+
+# Install debianutils (for the 'which' command)
+sudo apt-get update
+sudo apt-get install -y debianutils
+
+# Verify installations
+node --version
+npm --version
+which node  # Should show the path to Node.js
+```
 
 ## Installation Steps
 
