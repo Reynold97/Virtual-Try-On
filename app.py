@@ -279,5 +279,5 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Soft()) as demo:
 # Launch the app
 if __name__ == "__main__":
     demo.launch(
-        server_port=7860,
+        server_port=6060,
     )
