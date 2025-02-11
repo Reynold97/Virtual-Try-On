@@ -14,7 +14,7 @@ This application provides a web interface for virtual try-on of garments using t
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Reynold97/Virtual-Try-On.git
-cd VIRTUAL-TRY-ON
+cd /root/Virtual-Try-On
 ```
 
 2. **Create and activate a virtual environment**
@@ -35,7 +35,7 @@ pip install python-dotenv
 4. **Set up environment variables**
 Create a `.env` file in the project root:
 ```bash
-touch .env
+nano .env
 ```
 
 Add your Replicate API token:
@@ -50,19 +50,19 @@ REPLICATE_API_TOKEN=your_token_here
 sudo nano /etc/systemd/system/virtual-tryon.service
 ```
 
-Add the following content (adjust paths according to your setup):
+Add the following content:
 ```ini
 [Unit]
 Description=Virtual Try-On Demo Application
 After=network.target
 
 [Service]
-User=your_username
-Group=your_username
-WorkingDirectory=/path/to/virtual-try-on
-Environment="PATH=/path/to/virtual-try-on/venv/bin"
-EnvironmentFile=/path/to/virtual-try-on/.env
-ExecStart=/path/to/virtual-try-on/venv/bin/python app.py
+User=root
+Group=root
+WorkingDirectory=/root/Virtual-Try-On
+Environment="PATH=/root/Virtual-Try-On/venv/bin"
+EnvironmentFile=/root/Virtual-Try-On/.env
+ExecStart=/root/Virtual-Try-On/venv/bin/python app.py
 Restart=always
 RestartSec=10
 
@@ -83,10 +83,10 @@ demo.launch(
 3. **Set proper permissions**
 ```bash
 # Set ownership
-sudo chown -R your_username:your_username /path/to/virtual-try-on
+sudo chown -R root:root /root/Virtual-Try-On
 
 # Set proper permissions for the .env file
-chmod 600 /path/to/virtual-try-on/.env
+chmod 600 /root/Virtual-Try-On/.env
 ```
 
 4. **Start and enable the service**
@@ -196,7 +196,7 @@ sudo tail -f /var/log/nginx/access.log
 
 1. **File Permissions**
    - Keep the .env file secure with restricted permissions
-   - Run the service as a non-root user
+   - Note: Running as root is not recommended for production environments. Consider creating a dedicated service user for better security.
 
 2. **Firewall**
    - Only open necessary ports

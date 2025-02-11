@@ -141,7 +141,7 @@ with gr.Blocks() as demo:
 # Launch the app
 if __name__ == "__main__":
     demo.launch(
-        server_name="127.0.0.1",
+        server_name="0.0.0.0",
         server_port=6060,
         show_error=True
     )
