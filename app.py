@@ -218,7 +218,7 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Soft()) as demo:
     gr.Examples(
         examples=[
             [
-                "resources\Captura de pantalla 2025-02-11 212127.png",  # garment image
+                "/root/Virtual-Try-On/resources/Captura de pantalla 2025-02-11 212127.png",  # garment image
                 "resources\pexels-promise-mbagwu-447193699-16154368.jpg",  # human image
                 "blue and white t-shirt",    # description
                 "upper_body",                 # category
@@ -229,7 +229,7 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Soft()) as demo:
                 #False                    # mask_only
             ],
             [
-                "resources\Captura de pantalla 2025-02-11 212208.png",   # garment image
+                "/root/Virtual-Try-On/resources/Captura de pantalla 2025-02-11 212208.png",   # garment image
                 "resources\pexels-promise-mbagwu-447193699-16154368.jpg",   # human image
                 "blue t-shirt",   # description
                 "upper_body",             # category
@@ -240,7 +240,7 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Soft()) as demo:
                 #False                     # mask_only
             ],
             [
-                "resources\Captura de pantalla 2025-02-11 212230.png",   # garment image
+                "/root/Virtual-Try-On/resources/Captura de pantalla 2025-02-11 212230.png",   # garment image
                 "resources\pexels-promise-mbagwu-447193699-16154368.jpg",   # human image
                 "blue sleeved shirt",   # description
                 "upper_body",             # category
@@ -251,7 +251,7 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Soft()) as demo:
                 #False                     # mask_only
             ],
             [
-                "resources\Captura de pantalla 2025-02-11 212245.png",   # garment image
+                "/root/Virtual-Try-On/resources/Captura de pantalla 2025-02-11 212245.png",   # garment image
                 "resources\pexels-promise-mbagwu-447193699-16154368.jpg",   # human image
                 "blue pants",   # description
                 "lower_body",             # category
